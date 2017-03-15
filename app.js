@@ -3,13 +3,8 @@ var data = [
 	{question: "What kind of room has no doors or windows?", answer:"a mushroom"},
 	{question: "Which creature walks on four legs in the morning,\n two legs in the afternoon, and\n three legs in the evening?", answer:"Man"}
 ];
-var index = 0;
 document.getElementById("btn1").addEventListener('click', function(e){
-	  var riddle = document.getElementById("riddle");
-		if(riddle !== null) riddle.parentNode.removeChild(riddle);
 		var h2 = document.createElement("h2");
-		h2.innerText = data[index].question;
-		h2.setAttribute("id", "riddle");
+		h2.innerText = data[0].question;
 		document.body.append(h2);
-		index++;
 });
